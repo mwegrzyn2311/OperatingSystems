@@ -1,0 +1,73 @@
+Time measurement (of copy and sort operations) results:
+
+SIZE = 1
+Small record counter(400) and record size of 1
+	copy_sys: USER TIME = 0 | SYS TIME = 0
+	copy_lib: USER TIME = 0 | SYS TIME = 0.01
+	sort_sys: USER TIME = 0.01 | SYS TIME = 0.03
+	sort_lib: USER TIME = 0 | SYS TIME = 0.03
+Big record counter(5000) and record size of 1
+	copy_sys: USER TIME = 0 | SYS TIME = 0.05
+	copy_lib: USER TIME = 0 | SYS TIME = 0
+	sort_sys: USER TIME = 0.28 | SYS TIME = 1.98
+	sort_lib: USER TIME = 0.05 | SYS TIME = 0.46
+
+SIZE = 4
+Small record counter(400) and record size of 4
+	copy_sys: USER TIME = 0 | SYS TIME = 0.01
+	copy_lib: USER TIME = 0 | SYS TIME = 0
+	sort_sys: USER TIME = 0 | SYS TIME = 0.07
+	sort_lib: USER TIME = 0.01 | SYS TIME = 0.03
+Big record counter(5000) and record size of 4
+	copy_sys: USER TIME = 0 | SYS TIME = 0.04
+	copy_lib: USER TIME = 0 | SYS TIME = 0
+	sort_sys: USER TIME = 0.15 | SYS TIME = 0.93
+	sort_lib: USER TIME = 0.2 | SYS TIME = 0.79
+
+SIZE = 512
+Small record counter(400) and record size of 512
+	copy_sys: USER TIME = 0 | SYS TIME = 0
+	copy_lib: USER TIME = 0 | SYS TIME = 0
+	sort_sys: USER TIME = 0.01 | SYS TIME = 0.05
+	sort_lib: USER TIME = 0.04 | SYS TIME = 0.05
+Big record counter(5000) and record size of 512
+	copy_sys: USER TIME = 0 | SYS TIME = 0.04
+	copy_lib: USER TIME = 0 | SYS TIME = 0.02
+	sort_sys: USER TIME = 0.14 | SYS TIME = 0.89
+	sort_lib: USER TIME = 0.2 | SYS TIME = 1.14
+
+SIZE = 1024
+Small record counter(400) and record size of 1024
+	copy_sys: USER TIME = 0 | SYS TIME = 0
+	copy_lib: USER TIME = 0 | SYS TIME = 0
+	sort_sys: USER TIME = 0 | SYS TIME = 0.05
+	sort_lib: USER TIME = 0.05 | SYS TIME = 0.01
+Big record counter(5000) and record size of 1024
+	copy_sys: USER TIME = 0 | SYS TIME = 0.03
+	copy_lib: USER TIME = 0 | SYS TIME = 0.02
+	sort_sys: USER TIME = 0.18 | SYS TIME = 0.92
+	sort_lib: USER TIME = 0.2 | SYS TIME = 1.37
+
+SIZE = 4096
+Small record counter(400) and record size of 4096
+	copy_sys: USER TIME = 0 | SYS TIME = 0.02
+	copy_lib: USER TIME = 0 | SYS TIME = 0
+	sort_sys: USER TIME = 0 | SYS TIME = 0.06
+	sort_lib: USER TIME = 0.41 | SYS TIME = 2.52
+Big record counter(5000) and record size of 4096
+	copy_sys: USER TIME = 0.02 | SYS TIME = 0.04
+	copy_lib: USER TIME = 0 | SYS TIME = 0.06
+	sort_sys: USER TIME = 0.14 | SYS TIME = 1.02
+	sort_lib: USER TIME = 40.91 | SYS TIME = 275.94
+
+SIZE = 8192
+Small record counter(400) and record size of 8192
+	copy_sys: USER TIME = 0 | SYS TIME = 0.02
+	copy_lib: USER TIME = 0 | SYS TIME = 0
+	sort_sys: USER TIME = 0 | SYS TIME = 0.06
+	sort_lib: USER TIME = 0.47 | SYS TIME = 3.58
+Big record counter(5000) and record size of 8192
+	copy_sys: USER TIME = 0 | SYS TIME = 0.08
+	copy_lib: USER TIME = 0 | SYS TIME = 0.11
+	sort_sys: USER TIME = 0.11 | SYS TIME = 1.36
+	sort_lib: USER TIME = 57.31 | SYS TIME = 408.59
