@@ -1,0 +1,332 @@
+Time measured using static-lib and default flags:
+TIME MEASUREMENT RESULTS for small-similar data set
+Time measured for comparing 3 given file pairs, consisting 10 operations:
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for deleting 1 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 3 file pairs for the second time (after removing 1 blocks from the main array):
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+
+TIME MEASUREMENT RESULTS for small-partly-similar data set
+Time measured for comparing 4 given file pairs, consisting 4 operations:
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for deleting 2 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 4 file pairs for the second time (after removing 2 blocks from the main array):
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+
+TIME MEASUREMENT RESULTS for small-different data set
+Time measured for comparing 4 given file pairs, consisting 4 operations:
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for deleting 2 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 4 file pairs for the second time (after removing 2 blocks from the main array):
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+
+TIME MEASUREMENT RESULTS for medium-similar data set
+Time measured for comparing 24 given file pairs, consisting 32 operations:
+	REAL-TIME: 0.050
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+Time measured for deleting 22 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 24 file pairs for the second time (after removing 22 blocks from the main array):
+	REAL-TIME: 0.050
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+
+TIME MEASUREMENT RESULTS for medium-partly-similar data set
+Time measured for comparing 24 given file pairs, consisting 31 operations:
+	REAL-TIME: 0.070
+	USER-TIME: 0.010
+	SYSTEM-TIME: 0.000
+Time measured for deleting 22 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 24 file pairs for the second time (after removing 22 blocks from the main array):
+	REAL-TIME: 0.060
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+
+TIME MEASUREMENT RESULTS for medium-different data set
+Time measured for comparing 24 given file pairs, consisting 23 operations:
+	REAL-TIME: 0.060
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+Time measured for deleting 22 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 24 file pairs for the second time (after removing 22 blocks from the main array):
+	REAL-TIME: 0.070
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.050
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+
+TIME MEASUREMENT RESULTS for big-similar data set
+Time measured for comparing 48 given file pairs, consisting 59 operations:
+	REAL-TIME: 0.110
+	USER-TIME: 0.010
+	SYSTEM-TIME: 0.020
+Time measured for deleting 46 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 48 file pairs for the second time (after removing 46 blocks from the main array):
+	REAL-TIME: 0.100
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+
+TIME MEASUREMENT RESULTS for big-partly-similar data set
+Time measured for comparing 48 given file pairs, consisting 56 operations:
+	REAL-TIME: 0.130
+	USER-TIME: 0.010
+	SYSTEM-TIME: 0.000
+Time measured for deleting 46 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 48 file pairs for the second time (after removing 46 blocks from the main array):
+	REAL-TIME: 0.130
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.050
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.020
+
+TIME MEASUREMENT RESULTS for big-different data set
+Time measured for comparing 48 given file pairs, consisting 48 operations:
+	REAL-TIME: 0.140
+	USER-TIME: 0.010
+	SYSTEM-TIME: 0.010
+Time measured for deleting 46 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 48 file pairs for the second time (after removing 46 blocks from the main array):
+	REAL-TIME: 0.130
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.120
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.020
+
+Time measured using shared-lib and default flags:
+TIME MEASUREMENT RESULTS for small-similar data set
+Time measured for comparing 3 given file pairs, consisting 10 operations:
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for deleting 1 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 3 file pairs for the second time (after removing 1 blocks from the main array):
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+
+TIME MEASUREMENT RESULTS for small-partly-similar data set
+Time measured for comparing 4 given file pairs, consisting 4 operations:
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for deleting 2 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 4 file pairs for the second time (after removing 2 blocks from the main array):
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+
+TIME MEASUREMENT RESULTS for small-different data set
+Time measured for comparing 4 given file pairs, consisting 4 operations:
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for deleting 2 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 4 file pairs for the second time (after removing 2 blocks from the main array):
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+
+TIME MEASUREMENT RESULTS for medium-similar data set
+Time measured for comparing 24 given file pairs, consisting 32 operations:
+	REAL-TIME: 0.050
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+Time measured for deleting 22 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 24 file pairs for the second time (after removing 22 blocks from the main array):
+	REAL-TIME: 0.050
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+
+TIME MEASUREMENT RESULTS for medium-partly-similar data set
+Time measured for comparing 24 given file pairs, consisting 31 operations:
+	REAL-TIME: 0.070
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for deleting 22 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 24 file pairs for the second time (after removing 22 blocks from the main array):
+	REAL-TIME: 0.050
+	USER-TIME: 0.010
+	SYSTEM-TIME: 0.000
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.040
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+
+TIME MEASUREMENT RESULTS for medium-different data set
+Time measured for comparing 24 given file pairs, consisting 23 operations:
+	REAL-TIME: 0.070
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for deleting 22 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 24 file pairs for the second time (after removing 22 blocks from the main array):
+	REAL-TIME: 0.060
+	USER-TIME: 0.010
+	SYSTEM-TIME: 0.010
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.050
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+
+TIME MEASUREMENT RESULTS for big-similar data set
+Time measured for comparing 48 given file pairs, consisting 59 operations:
+	REAL-TIME: 0.100
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+Time measured for deleting 46 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 48 file pairs for the second time (after removing 46 blocks from the main array):
+	REAL-TIME: 0.100
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+
+TIME MEASUREMENT RESULTS for big-partly-similar data set
+Time measured for comparing 48 given file pairs, consisting 56 operations:
+	REAL-TIME: 0.130
+	USER-TIME: 0.010
+	SYSTEM-TIME: 0.010
+Time measured for deleting 46 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 48 file pairs for the second time (after removing 46 blocks from the main array):
+	REAL-TIME: 0.130
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.010
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+
+TIME MEASUREMENT RESULTS for big-different data set
+Time measured for comparing 48 given file pairs, consisting 48 operations:
+	REAL-TIME: 0.140
+	USER-TIME: 0.010
+	SYSTEM-TIME: 0.020
+Time measured for deleting 46 blocks:
+	REAL-TIME: 0.000
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.000
+Time measured for comparing 48 file pairs for the second time (after removing 46 blocks from the main array):
+	REAL-TIME: 0.140
+	USER-TIME: 0.000
+	SYSTEM-TIME: 0.010
+Time measured for printing all the blocks to console:
+	REAL-TIME: 0.120
+	USER-TIME: 0.010
+	SYSTEM-TIME: 0.020
+
+Time measured using static-lib and -O3 flag:
+Time measured using shared-lib and default -O3 flag:
+Time measured using dynamic-lib and default -O3 flag:
+Time measured using static-lib and -Os flag:
+Time measured using shared-lib and default -Os flag:
+Time measured using dynamic-lib and default -Os flag:
