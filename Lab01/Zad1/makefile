@@ -3,7 +3,7 @@ CC = gcc -Wall -std=gnu99 -ggdb
 all: main-static main-shared clean
 
 static:
-	make clean-libs
+	make clean
 	$(CC) -c library.c
 	ar rcs library.a library.o
 
