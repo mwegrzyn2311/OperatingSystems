@@ -133,7 +133,7 @@ void sort_lib(char* fileName, int records, long size) {
 
 void copy_sys(char* fileName1, char* fileName2, int records, long size) {
     int file1 = open(fileName1, O_RDONLY);
-    int file2 = open(fileName2, O_WRONLY);
+    int file2 = open(fileName2, O_WRONLY | O_CREAT);
     size++; //We add \n after each record, so we need to do size++
     char* record = (char*) calloc(size, sizeof(char));
     for(int i = 0; i < records; ++i) {
