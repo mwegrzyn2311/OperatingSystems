@@ -58,6 +58,17 @@ void freeFileMatrix(FileMatrix* matrix) {
     free(matrix);
 }
 
+void printResourceUsage(struct rusage* start, struct rusage* end) {
+    time_t userTimeInSec = abs(end->ru_utime.tv_sec - start->ru_utime.tv_sec);
+    time_t userTimeInUsec = abs(end->ru_utime.tv_usec - start->ru_utime.tv_usec);
+
+    time_t systemTimeInSec = abs(end->ru_stime.tv_usec - start->ru_stime.tv_usec);
+    time_t systemTimeInUsec = abs(end->ru_stime.tv_usec - start->ru_stime.tv_usec);
+
+    printf("User time: %ld.%06ld\n", userTimeInSec, userTimeInUsec);
+    printf("System time: %ld.%06ld\n", systemTimeInSec, systemTimeInUsec);
+}
+
 /** Utility functions to measure matrix dimensions */
 size_t getMatrixWidth(FILE* file) {
     fseek(file, 0, 0);
@@ -297,9 +308,13 @@ void multiplyShared(FileMatrix* m1, FileMatrix* m2, char* resPath, int workers, 
     }
 
     int status;
+    struct rusage start, end;
     for(size_t i = 0; i < workers; i++) {
+        getrusage(RUSAGE_CHILDREN, &start);
         waitpid(workersArray[i], &status, 0);
+        getrusage(RUSAGE_CHILDREN, &end);
         printf("Proces %d wykonal %d mnozen macierzy\n", workersArray[i], WEXITSTATUS(status));
+        printResourceUsage(&start, &end);
     }
 
     free(workersArray);
@@ -355,9 +370,13 @@ void multiplySeparate(FileMatrix* m1, FileMatrix* m2, char* resPath, int workers
     }
 
     int status;
+    struct rusage start, end;
     for(size_t i = 0; i < workers; i++) {
-        waitpid(workersArray[i], &status, 0);;
+        getrusage(RUSAGE_CHILDREN, &start);
+        waitpid(workersArray[i], &status, 0);
+        getrusage(RUSAGE_CHILDREN, &end);
         printf("Proces %d wykonal %d mnozen macierzy\n", workersArray[i], WEXITSTATUS(status));
+        printResourceUsage(&start, &end);
     }
 
     free(workersArray);

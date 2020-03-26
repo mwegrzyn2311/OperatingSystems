@@ -19,7 +19,16 @@ int main(int argc, char** argv) {
     } else {
         writeToSharedFile = false;
     }
+    if(argc >=7) {
+        int cpuLimit = atoi(argv[5]);
+        int asLimit = atoi(argv[6]);
+        struct rlimit cpu = {cpuLimit, cpuLimit};
+        struct rlimit as = {asLimit*1000000, asLimit*1000000};
 
+        setrlimit(RLIMIT_CPU, &cpu);
+        setrlimit(RLIMIT_AS, &as);
+    }
+    
     multiplyWholeList(fileList, workersCount, seconds, writeToSharedFile);
     return 0;
 }
