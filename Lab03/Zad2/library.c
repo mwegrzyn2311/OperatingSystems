@@ -37,6 +37,11 @@ size_t longLongLen(long long int a) {
         return 1;
     }
     size_t res = 0;
+    if(a < 0) {
+        //sign
+        res++;
+        a = -a;
+    }
     while(a > 0) {
         res++;
         a /= 10;
@@ -204,12 +209,15 @@ void createColFile(size_t col, size_t height, long long int* colValues) {
     char* buffer = malloc((NUMBER_LEN+3)*sizeof(char));
     for(size_t i = 0; i < height; i++) {
         sprintf(buffer, "%lld", colValues[i]);
+
         size_t spaces = NUMBER_LEN - longLongLen(colValues[i]);
+
         for(size_t j = 0; j < spaces; j++) {
             strcat(buffer, " ");
         }
+
         strcat(buffer, " \n");
-        fwrite(buffer, NUMBER_LEN+3, sizeof(char), f);
+        fwrite(buffer, strlen(buffer), sizeof(char), f);
     }
     free(filename);
     free(buffer);
@@ -223,12 +231,13 @@ void updateCol(char* resFilename, size_t col, size_t height, size_t width, long 
     flock(fd, LOCK_EX);
     size_t lineLen = width*(NUMBER_LEN+1);
     size_t pos;
-    char* buffer = malloc((NUMBER_LEN+1)*sizeof(char));
+    char* buffer = malloc((NUMBER_LEN+2)*sizeof(char));
     for(size_t i = 0; i < height; i++) {
         pos = lineLen*i + (NUMBER_LEN+1)*col;
         lseek(fd, pos, 0);
         sprintf(buffer, "%lld", colValues[i]);
         size_t spaces = NUMBER_LEN - longLongLen(colValues[i]);
+    
         for(size_t j = 0; j < spaces; j++) {
             strcat(buffer, " ");
         }
@@ -237,7 +246,7 @@ void updateCol(char* resFilename, size_t col, size_t height, size_t width, long 
         } else {
             strcat(buffer, " ");
         }
-        write(fd, buffer, NUMBER_LEN+1);
+        write(fd, buffer, NUMBER_LEN+2);
     }
     free(buffer);
     flock(fd, LOCK_UN);
